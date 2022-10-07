@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+ul,
+ol,
+menu {
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  background: white;
+}
+
+header .hero {
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-size: cover;
+  height: 400px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .logo {
+  text-align: center;
+  padding: 1.2rem 0;
+}
+
+.container .nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .nav ul li {
+  font-weight: 600;
+  padding: 3.7rem 0.9rem;
+  border-bottom: 5px solid transparent;
+}
+
+.container .nav ul li.active,
+.container .nav ul li:hover {
+  border-bottom-color: #0282F9;
+}
+
+main {
+  background-color: #1C1C1C;
+  padding-top: 20px;
+}
+
+main .container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 40px 0;
+}
+
+main .current-series {
+  position: absolute;
+  top: -45px;
+  left: -20px;
+  background-color: #0282F9;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 10px 25px;
+}
+
+main .load-more-btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #0282F9;
+  color: white;
+  border: none;
+  padding: 8px 40px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main .card {
+  cursor: pointer;
+  width: 100%;
+}
+
+main .card .card-image {
+  height: 200px;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+main .card .card-image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+
+main .card .card-text {
+  padding: 10px 0;
+  color: white;
+  text-transform: uppercase;
+}
+
+main .shop-section {
+  background-color: #0282F9;
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+
+main .shop-section .shop-container {
+  width: 1500px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+main .shop-section .shop-container .info-shop {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  z-index: 1000;
+}
+
+main .shop-section .shop-container .info-shop img {
+  height: 100%;
+}
+
+main .shop-section .shop-container .info-shop .shop-text {
+  padding-left: 20px;
+  color: white;
+}
+
+main .shop-section .shop-container .info-shop:hover img {
+  animation: bounce 0.6s linear;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+main .shop-section .shop-container .visa img {
+  width: 80px;
+}
+
+section.mid {
+  overflow-y: hidden;
+  background: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-size: cover;
+  padding: 25px 0;
+}
+
+section.mid img {
+  margin: -70px 0;
+}
+
+section.mid nav {
+  display: flex;
+  gap: 50px;
+}
+
+section.mid nav h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+section.mid nav ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+section.mid nav ul li {
+  margin: 5px 0;
+}
+
+section.mid nav ul li a {
+  font-size: 0.8rem;
+  color: #959595;
+  text-decoration: none;
+}
+
+section.mid nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section.bot {
+  padding: 50px 0;
+  background: #303030;
+}
+
+section.bot a.signup {
+  border: 3px solid #0282F9;
+  padding: 15px;
+  font-size: 1.4rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+section.bot a.signup:hover {
+  background: #0282F9;
+}
+
+section.bot .social {
+  display: flex;
+  gap: 30px;
+}
+
+section.bot .social h3 {
+  font-size: 1.6rem;
+  color: #0282F9;
+  text-transform: uppercase;
+}
+
+section.bot .social ul {
+  list-style: none;
+}
+
+section.bot .social ul li {
+  display: inline;
+  margin: 10px;
+}
+
