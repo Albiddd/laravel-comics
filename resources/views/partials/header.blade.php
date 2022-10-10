@@ -56,8 +56,8 @@
             <ul>
                 @foreach ($links as $link)
                 
-                <li class="{{ $loop->first ? 'active' : '' }}">
-                    <a href="#">{{ $link['text']}}</a>
+                <li class="{{ Route::currentRouteName() === $link['url'] ? 'active' : '' }}">
+                    <a href="{{isset($link['url']) ? route($link['url']) : '/' }}">{{ $link['text']}}</a>
                 </li>
                 @endforeach
 
