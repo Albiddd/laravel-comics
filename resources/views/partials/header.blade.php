@@ -1,7 +1,9 @@
 <header>
     <div class="container">
         <div class="logo">
-            <img src="{{ asset('img/dc-logo.png') }}" alt="Dc Comics logo">
+            <a href="{{ route('home') }}">
+                <img src="{{ asset('img/dc-logo.png') }}" alt="Dc Comics logo">
+            </a>
         </div>
 
         @php
@@ -9,43 +11,43 @@
             [
                 [
                     'text' => 'CHARACTERS',
-                    'url' => '#',
+                    'url' => 'characters',
                 ],
                 [
                     'text' => 'COMICS',
-                    'url' => '#',
+                    'url' => 'comics',
                 ],
                 [
                     'text' => 'MOVIES',
-                    'url' => '#',
+                    'url' => 'movies',
                 ],
                 [
                     'text' => 'TV',
-                    'url' => '#',
+                    'url' => 'tv',
                 ],
                 [
                     'text' => 'GAMES',
-                    'url' => '#',
+                    'url' => 'games',
                 ],
                 [
                     'text' => 'COLLECTIBLES',
-                    'url' => '#',
+                    'url' => 'collectibles',
                 ],
                 [
                     'text' => 'VIDEOS',
-                    'url' => '#',
+                    'url' => 'videos',
                 ],
                 [
                     'text' => 'FANS',
-                    'url' => '#',
+                    'url' => 'fans',
                 ],
                 [
                     'text' => 'NEWS',
-                    'url' => '#',
+                    'url' => 'news',
                 ],
                 [
                     'text' => 'SHOP',
-                    'url' => '#',
+                    'url' => 'shop',
                 ],
             ];
         @endphp
