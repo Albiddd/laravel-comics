@@ -24,7 +24,7 @@
         <p>{{$comic['description']}}</p>
     </div>
     <div class="details-right">
-        <img src="/img/adv.jpg" alt="">
+        <img src="{{ asset('img/adv.jpg') }}" alt="">
     </div>
     
 </div>
